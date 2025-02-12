@@ -20,6 +20,10 @@ p,li{
     font-size: .8em;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background-color: rgb(0, 97, 255,.1);
     height: 100vh;
@@ -83,7 +87,7 @@ div.photo>img{
 
 div.more-information b{margin-right: 3px;}
 
-div.center{
+div.center,div.right-side{
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -94,7 +98,7 @@ div.center ul li{
     margin-left: 15px;
 }
 
-div.center>div{
+div.center>div, div.right-side>div{
     flex: 1;
     background-color: white;
     margin: 10px 20px;
@@ -121,14 +125,67 @@ div.center div.personality input::-webkit-slider-thumb {
     background: black;
     cursor: pointer;
   }
+
 div.center div.personality input::-moz-range-thumb {
     width: 10px;
     height: 10px;
     background: black;
     cursor: pointer;
-  }
+}
 
 div.center div.personality div.text{
     display: flex;
     justify-content: space-between;
+}
+
+div.right-side div.educ-list > table,
+div.right-side .chart-skill,
+div.right-side .quote p,
+div.right-side .soc-icon{
+    margin-top: 7px;
+    width: 100%;
+}
+
+div.right-side div.educ-list > table td
+{
+    font-size: 12px;
+    vertical-align: top;
+    padding: 5px 0;
+}
+
+div.right-side div.educ-list > table b{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+div.right-side .skill li div{
+    height: 5px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+div.bar.hardware{
+    width: 90%;
+}
+
+div.bar.software{
+    width: 80%;
+}
+
+div.bar.networking{
+    width: 75%;
+}
+
+div.bar.programming{
+    width: 65%;
+}
+
+div.right-side .quote p{
+    text-align: center;
+}
+
+div.right-side .soc-icon .fa{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
 }
